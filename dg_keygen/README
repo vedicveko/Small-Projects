@@ -1,0 +1,1 @@
+This is an autoit script that automates a key generator. The www/ directory contains some scripts to make the generator web accessible. The web scripts drop some files that keygen_monitor.pl watches for. keygen_monitor.pl will generate the serial based on those files and then pass it back to the web scripts.
