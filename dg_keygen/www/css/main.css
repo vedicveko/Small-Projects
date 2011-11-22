@@ -1,0 +1,197 @@
+/*
+LEGAL
+=====
+Copyright: Daemon Pty Limited 2006, http://www.daemon.com.au
+Community: Mollio http://www.mollio.org $
+License: Released Under the "Common Public License 1.0", 
+http://www.opensource.org/licenses/cpl.php
+License: Released Under the "Creative Commons License", 
+http://creativecommons.org/licenses/by/2.5/
+License: Released Under the "GNU Creative Commons License", 
+http://creativecommons.org/licenses/GPL/2.0/
+*/
+
+/* THE BIG GUYS */
+* {margin:0;padding:3}
+body {padding: 0 0 20px;background: #fff url("/css/images/body_bg.gif") repeat-x 0 100%;color:#333;font:90%/1.5 arial,tahoma,verdana,sans-serif}
+
+a,a:link,a:link,a:link,a:hover {background:transparent;text-decoration:underline;cursor:pointer}
+a:link {color:#c00}
+a:visited {color:#c00}
+a:hover,a:active {color:#069}
+.date {font: bold 82% arial;color:#bbb;display:block;letter-spacing: 1px}
+.textbg {
+        FONT-SIZE: 14px; COLOR: #000000; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}
+.textreg {
+        FONT-SIZE: 10px; COLOR: #979797; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}
+
+
+
+
+/* LINKS */
+/*
+a,a:link,a:link,a:link,a:hover {background:transparent;text-decoration:underline;cursor:pointer} 
+a:link {color:#c00} 
+a:visited {color:#999} 
+a:hover,a:active {color:#069} 
+*/
+/* LAYOUT - HEADER */
+#header {background: #666 url("/css/images/sprites.gif") repeat-x 0 100%;margin: 0 0 25px;padding: 0 0 8px}
+
+	#header #site-name {font: 265% arial;letter-spacing: -.05em;margin:0 0 0 40px;padding:3px 0;color:#ccc;border:none}
+	
+	/* NAV - top horizontal nav */
+	#nav, #nav ul {padding: 0;margin: 0;list-style: none}
+	#nav {font-weight:bold;height:2.09em;font: bold 96% arial;margin: 0 105px 0 40px}
+	#nav li {position:relative;background: #999;float: left;width: 10em;display:block;margin: 0;border-bottom: 3px solid #666;border-right: 3px solid #252525;padding:0}
+	#nav a, #nav a:link, #nav a:visited, #nav a:hover, #nav a:active {text-decoration:none;cursor:pointer;color:#fff;display: block;padding: 4px 10px 2px}
+	#nav a:hover {color:#000}
+	
+	#nav li ul {border-left: 1px solid #c00;background: #f6f6f6 url("/css/images/featurebox_bg.gif") no-repeat 100% 100%;width:15.8em;font-size:90%;margin-top:3px;position: absolute;font-weight:normal;left: -999em}
+	#nav li:hover ul, #nav li.sfhover ul {left: 0;z-index:99999}
+	
+	#nav li li {background:none;float:none;border:none;border: 1px solid #999;border-top:1px solid #fff;border-right:none;border-left:none;padding-left:0}
+	#nav li li.last {border-bottom:none}
+	#nav li li a, #nav li li a:link, #nav li li a:visited, #nav li li a:hover {color:#000;padding: 3px 10px 2px;width:14em}
+	#nav li li a:hover {color:#fff;background:#c00}
+	
+	#nav li.active {background: #c00;border-bottom: 3px solid #c00}
+	#nav li.active ul {border:none;background: #c00 url("/css/images/featurebox2_bg.gif") no-repeat 100% 100%}
+	#nav li.active a:link, #nav li.active a:visited, #nav li.active a:hover, #nav li.active a:active {}
+	#nav li.active a:hover {color:#000}
+	
+	#nav li.active li {border:none;border-top: 1px solid #c15c5c;border-bottom: 1px solid #870000}
+	#nav li.active li.last {border-bottom: none}
+	#nav li.active li a:link, #nav li.active li a:visited, #nav li.active li a:hover, #nav li.active li a:active {color:#fff}
+	#nav li.active li a:hover {background: #666 url("/css/images/sprites.gif") repeat-x 0 99%;color:#fff}
+	
+	#nav li.active li.active a:link, #nav li.active li.active a:visited, #nav li.active li.active a:hover, #nav li.active li.active a:active {color:#fff;font-weight:bold;background: #666 url("/css/images/sprites.gif") repeat-x 0 99%}
+
+	/* hide from IE mac \*/
+	#nav li {width:auto}
+	/* end hiding from IE5 mac */
+	
+	/* POWERED BY - mollio logo in this case */
+	#poweredby {width:96px;height:63px;position:absolute;top:-102px;right:0}
+
+/* LAYOUT - main body of page */
+#wrap {min-width:770px;max-width:1200px;margin: 0 auto;position:relative}
+#content-wrap {position:relative;width:100%}
+	#utility {position:absolute;top:0;left:25px;width:165px;border-top: 5px solid #999;padding-bottom: 40px}
+	#sidebar {position:absolute;top:0;right:25px;width:20%;border-top: 5px solid #999;padding-top: 1px;padding-bottom: 40px}
+
+#content {margin: 0 50px}
+	#content #breadcrumb {margin-top:-5px;font-size:93%;font-weight:bold}
+	#content #breadcrumb a:link, #content #breadcrumb a:visited {text-decoration:none}
+	#content #breadcrumb a:hover, #content #breadcrumb a:active {text-decoration:underline}
+	
+	/* CODE - formatting for code inserted into body - more here: http://dizque.lacalabaza.net/temp/lipt/ */
+		ol.code {font-family: monospace;position:relative}
+		ol.code li {color: #666;margin-bottom: 1px}
+		ol.code code {color: #000;display: block}
+		ol.code .cmt {color: #4077d2}
+		li.tab0 code {padding-left: 4em}
+		li.tab1 code {padding-left: 8em}
+		li.tab2 code {padding-left: 12em}
+		li.tab3 code {padding-left: 16em}
+		li.tab4 code {padding-left: 20em}
+		li.tab5 code {padding-left: 24em}
+		ol.code li  {background: #f3f3f3 url("/css/images/td_bg.gif") no-repeat 100% 100%}
+		p.note {margin: 1em;border: 1px solid #ddd;background: #f0f0f0;padding: 1em}
+
+        /* 'MORE' LINK - provides an accessible alternative to just using 'more' as a link at the end of paragraphs */
+                a.morelink:link, a.morelink:visited, a.morelink:hover, a.morelink:active {background: transparent url("images/sprites.gif") no-repeat 5px -500px;padding-left:21px}
+                a.morelink:hover {background: transparent url("images/sprites.gif") 5px -400px}
+                .morelink span {position:absolute;left:-9999px;width:900px}
+
+
+/* LAYOUT - FOOTER */
+#footer {clear:both;border-top: 1px solid #E3E8EE;padding: 10px 0 30px;font-size:86%;color:#999}
+	#footer p {margin:0}
+	#footer a:link {color:#999}
+
+
+
+/* TABLES */
+
+table.search_results {
+        border: 1px solid #809FFF; 
+        margin:10px 0pt 15px;
+        width: 100%;
+        text-align: left;
+}
+table.search_results thead tr th, table.search_results tfoot tr th {
+        background-color: #e6EEEE;
+        padding: 4px;
+	text-align: center;
+}
+table.search_results thead tr .header {
+        background-image: url(/img/tables/bg.gif);
+        background-repeat: no-repeat;
+        background-position: center right;
+        cursor: pointer;
+}
+table.search_results tbody td {
+        color: #3D3D3D;
+        padding: 4px;
+        vertical-align: top;
+        border: 1px solid #809FFF;
+}
+
+table.search_results tbody tr.odd td {
+        background-color: #E6ECFF;
+}
+
+table.search_results thead tr .headerSortUp {
+        background-image: url(/img/tables/asc.gif);
+}
+table.search_results thead tr .headerSortDown {
+        background-image: url(/img/tables/desc.gif);
+}
+table.search_results thead tr .headerSortDown, table.search_results thead tr .headerSortUp {
+	background-color: #BFCFFF;
+}
+
+
+/* TABLES */
+
+table.std_table {
+        border: 1px solid #809FFF;
+        margin:10px 0pt 15px;
+        width: 100%;
+        text-align: left;
+}
+table.std_table thead tr th, table.std_table tfoot tr th {
+        background-color: #e6EEEE;
+        padding: 4px;
+        text-align: center;
+}
+table.std_table thead tr .header {
+        background-image: url(/img/tables/bg.gif);
+        background-repeat: no-repeat;
+        background-position: center right;
+        cursor: pointer;
+}
+table.std_table tbody td {
+        color: #3D3D3D;
+        padding: 4px;
+        vertical-align: top;
+        border: 1px solid #809FFF;
+}
+
+table.std_table tbody tr.odd td {
+        background-color: #E6ECFF;
+}
+
+table.std_table thead tr .headerSortUp {
+        background-image: url(/img/tables/asc.gif);
+}
+table.std_table thead tr .headerSortDown {
+        background-image: url(/img/tables/desc.gif);
+}
+table.std_table thead tr .headerSortDown, table.std_table thead tr .headerSortUp {
+	background-color: #BFCFFF;
+}
+
