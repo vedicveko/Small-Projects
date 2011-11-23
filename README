@@ -1,1 +1,6 @@
 This repo contains various small projects that I wanted to keep, but I do not feel warrant their own repo.
+
+dg_keygen - An AutoIt script that automates a keygenerator. Includes a command line app and a web interface.
+
+xbmc-send - I use uTorrent and XBMC. This script lets uTorrent send messages to my XBMC box so I can see when torrents
+start and finish. It cleans up the names and does some light file renaming too.
