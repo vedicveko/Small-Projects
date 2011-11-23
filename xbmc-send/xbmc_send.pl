@@ -109,6 +109,11 @@ if($title =~ /^Finished/) {
   exit;
 }
 
+if($title =~ /^Error:/) {
+  logger("I don't care about torrent errors");
+  exit;
+}
+
 $tmessage = $message;
 my ($ext) = $tmessage =~ /(\.[^.]+)$/;
 
@@ -139,6 +144,7 @@ $message =~ s/\[/\(/g;
 $message =~ s/\]/\)/g;
 
 $message =~ s/\./ /g;
+$message =~ s/_/ /g;
 
 $message =~ s/   / /g;
 $message =~ s/  / /g;
@@ -166,6 +172,8 @@ if(!$rename_files || $title !~ /Download Finished/) {
 
 $file = $ARGV[2];
 $label = $ARGV[3];
+
+$file =~ s/\"//g;
 
 logger("File: $file");
 logger("Label: $label");
