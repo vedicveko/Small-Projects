@@ -1,0 +1,30 @@
+This script will take uTorrent's events, clean them up, and send them to XBMC. This is so I can see when my torrents start and finish as I'm watching TV.
+
+It will also do some light renaming work.
+
+I'm about %99 sure this program will only ever be useful to me.
+
+A note on my setup; I have an XBMC box in the living room running my TV and a Windows computer in my office running uTorrent. uTorrent is set up
+to automatically download the shows I like to watch and sticks them into an 'Unsorted' directory that XBMC has access to.
+
+This works well for me, but I felt it had a couple of short comings.
+
+The files uTorrent downloads have names like this: How.I.Met.Your.Mother.S07E11.HDTV.XviD-ASAP.[VTV].avi. I wanted to clean that up a bit so this
+script will rename the file to How I Met Your Mother S07E11.avi. Depending on the torrent the files would also end up in a subdirectory and
+sometimes in a subdirectory and RARed. This script will get them out of the subdirectory and unrar them if needed.
+
+I also wanted uTorrent to pop up a message on my TV when a download started and when it finished. This script will do that using the cleaned up file
+name of the torrent. XBMC's notification interface is nice enough to do this in a manner thst is noticable, but doesn't interrupt anything
+you are watching.
+
+Installation is pretty straight forward, just copy the entire xbmc-send folder to C:\xbmc-send. If you want it in a different place it requires a
+source change.
+
+See utorrent_example.png on how to setup uTorrent.
+
+On your XBMC box, go to System->Network and enable 'Allow control of XBMC via HTTP'. Make the username and password blank.
+
+Then under C:\xbmc-send, open up config.txt and change the host= line to match your XBMC box's IP and port.
+
+
+unrar.exe is from http://unxutils.sourceforge.net/ and I have nothing to do with it.

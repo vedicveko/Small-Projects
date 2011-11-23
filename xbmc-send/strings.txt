@@ -1,0 +1,30 @@
+# a collection of strings to remove from $message
+xvid-[a-zA-Z0-9]+
+\[VTV\]
+[a-zA-Z][a-zA-Z]tv
+xvid
+mp3
+ac3
+WS\.
+720p
+1080i
+x264-[a-zA-Z0-9]+
+x264
+\[ www\.TorrentDay\.com \] - 
+norar
+dvdrip
+bdrip
+www\.
+[a-zA-Z0-9]+\.com
+[a-zA-Z0-9]+\.org
+[a-zA-Z0-9]+\.net
+COMPLETE\.
+PROPER\.
+brrip
+SCR\.
+LIMITED\.
+-irs\.
+-mantesh
+epub
+mobi
+MVGroup\.Forum

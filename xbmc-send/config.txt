@@ -1,0 +1,14 @@
+## Don't need the :port if you're using 80
+host=127.0.0.1:8080
+
+# How long in seconds XBMC will display the message
+display_time=25
+
+# Optional, creates a log file, log.txt
+enable_logging=1
+
+# Optional, will try to rename the file
+rename_files=1
+
+# Rename labeled torrents or not.
+ok_to_rename_labels=0
