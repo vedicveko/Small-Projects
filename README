@@ -4,3 +4,5 @@ dg_keygen - An AutoIt script that automates a keygenerator. Includes a command l
 
 xbmc-send - I use uTorrent and XBMC. This script lets uTorrent send messages to my XBMC box so I can see when torrents
 start and finish. It cleans up the names and does some light file renaming too.
+
+remove_black.php - Recusively look through a directory finding and deleting any images that are mostly black.
